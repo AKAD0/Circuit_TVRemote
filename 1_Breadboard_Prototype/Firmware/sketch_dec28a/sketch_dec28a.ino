@@ -33,26 +33,31 @@ void loop() {
 
   if (PWR_btn == 1) {
     irsend.sendNEC(50153655,32);
+    Serial.println("PWR");
     delay(30);
   };
 
   if (NEXT_btn == 1) {
     irsend.sendNEC(50190375,32);
+    Serial.println("NEXT");
     delay(30);
   };
 
   if (PREV_btn == 1) {
     irsend.sendNEC(50198535,32);
+    Serial.println("PREV");
     delay(30);
   };
 
   if (VOLU_btn == 1) {
     irsend.sendNEC(50157735,32);
+    Serial.println("VOLU");
     delay(30);
   };
 
   if (VOLD_btn == 1) {
     irsend.sendNEC(50165895,32);
+    Serial.println("VOLD");
     delay(30);
   };
 }
